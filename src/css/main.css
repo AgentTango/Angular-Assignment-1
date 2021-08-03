@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color: aquamarine;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +17,7 @@ body {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
+    /*   overflow: scroll; */
     min-width: 30vw;
     max-width: 70vw;
     /* max-width: 100%; */
@@ -39,14 +38,14 @@ body {
 }
 
 .form-control {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
-    resize: both;
+    /* padding-bottom: 20px; */
 }
 
 .form-control label {
-    display: inline-block;
     margin-bottom: 5px;
 }
 
@@ -75,7 +74,7 @@ body {
     visibility: hidden;
 }
 
-.form-control.success i.fa-check-circle{
+.form-control.success i.fa-check-circle {
     color: #2ecc71;
     position: absolute;
     top: 40px;
@@ -83,7 +82,7 @@ body {
     visibility: visible;
 }
 
-.form-control.error i.fa-exclamation-circle{
+.form-control.error i.fa-exclamation-circle {
     color: maroon;
     position: absolute;
     top: 40px;
@@ -93,17 +92,11 @@ body {
 
 .form-control small {
     visibility: hidden;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 .form-control.error small {
     color: maroon;
     visibility: visible;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 .form button {
